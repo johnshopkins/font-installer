@@ -10,7 +10,7 @@ class FontInstallerInstaller extends LibraryInstaller
   public function getPackageBasePath(PackageInterface $package)
   {
     $name = str_replace("johnshopkins/", "", $package->getPrettyName());
-    return 'src/assets/font/lib/' . $name;
+    return 'src/assets/fonts/lib/' . $name;
   }
 
   public function supports($packageType)

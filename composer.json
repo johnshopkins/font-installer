@@ -1,0 +1,16 @@
+{
+  "name": "johnshopkins/font-installer",
+  "description": "Composer custom installer for fonts.",
+  "type": "composer-plugin",
+  "extra": {
+    "class": "FontInstaller\\Composer\\FontInstallerPlugin"
+  },
+  "autoload": {
+    "psr-4" : {
+      "FontInstaller\\" : ["src/"]
+    }
+  },
+  "require": {
+    "composer-plugin-api": "1.0.0"
+  }
+}

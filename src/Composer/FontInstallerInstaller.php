@@ -7,9 +7,10 @@ use \Composer\Installer\LibraryInstaller;
 
 class FontInstallerInstaller extends LibraryInstaller
 {
-  public function getPackageBasePath(PackageInterface $package)
+  public function getInstallPath(PackageInterface $package)
   {
     $name = str_replace("johnshopkins/", "", $package->getPrettyName());
+    echo $name . "\n";
     return 'src/assets/fonts/lib/' . $name;
   }
 
